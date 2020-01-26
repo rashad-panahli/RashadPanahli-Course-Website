@@ -1,0 +1,85 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+    
+
+<!-- Bar -->  
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{% static "blog/images/backg_2.jpg" %}');">
+      <div class="overlay"></div>
+       <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Əlaqə</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'blog-home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+       </div>
+    </section>
+
+  
+  <!-- Main Body -->  
+    <section class="ftco-section contact-section">
+      <div class="container">
+        <div class="row d-flex mb-5 contact-info">
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box p-4 text-center">
+          		<h3 class="mb-4">Ünvan</h3>
+	            <p>Bünyad Sərdarov küçəsi (İçərişəhər metrosu, Axundov Bağının yanı)</p>
+	          </div>
+          </div>
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box p-4 text-center">
+          		<h3 class="mb-4">Nömrəmiz</h3>
+              <p><a href="tel:/+99450 555 11 44/">+99450 555 11 40 </a></p>
+              <p><a href="tel:/+99412 492 68 17/">+99412 492 68 17 </a></p>
+	          </div>
+          </div>
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box p-4 text-center">
+          		<h3 class="mb-4">Email Ünvanı</h3>
+	            <p><a href="mailto:info@upacademy.az">info@upacademy.az</a></p>
+	          </div>
+          </div>
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box p-4 text-center">
+          		<h3 class="mb-4">Website</h3>
+	            <p><a href="https://upacademy.az">upacademy.az</a></p>
+	          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+		<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+			<div class="container">
+				<div class="row d-flex align-items-stretch no-gutters">
+					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
+            
+                  {% if messages %}
+                    {% for message in messages %}
+                      <div class="alert alert-{{ message.tags }}" role="alert">
+                        {{ message }}
+                      </div>
+                     {% endfor %} 
+                    {% endif %}
+
+
+            <form action="/contact/" method="post" class="form-group">
+              {%  csrf_token  %}
+              {{ form.as_p }} 
+              
+                <input type="submit" value="Göndər" class="btn btn-primary py-3 px-5">
+            </form>
+					</div>
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.9838746969752!2d49.82989579877531!3d40.36738468062211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d689dff6c8f%3A0x88001b034a420f07!2sUP%20Academy!5e0!3m2!1sru!2sus!4v1577582880809!5m2!1sru!2sus" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+{% endblock content %}

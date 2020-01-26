@@ -1,0 +1,82 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+   
+   <section class="hero-wrap hero-wrap-2" style="background-image: url('{% static "blog/images/backg_2.jpg" %}');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Bizim Dərslərimiz</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'blog-home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Courses <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 course d-lg-flex ftco-animate">
+						<div class="img" style="background-image: url('{% static "blog/images/course_1.jpg" %}');"></div>
+						<div class="text bg-light p-4">
+							<h3><a href="#">Xarici Dil Kursları</a></h3>
+							<p>Ingilis, Rus, Alman Italyan, Ispan, Fransız, Çex, Çin və Ərəb dillərinə xarici müəllimlərimizlə öyrənə bilərsiz</p>
+						</div>
+					</div>
+					<div class="col-md-6 course d-lg-flex ftco-animate">
+						<div class="img" style="background-image: url('{% static "blog/images/course_2.jpg" %}');"></div>
+						<div class="text bg-light p-4">
+							<h3><a href="#">IELTS və TOEFL Kursları</a></h3>
+							<p>IELTS imtahanını uğurlu vermək üçün Tədris Mərkəzində tam şəkildə lazımı olan təlim keçirilir. IELTS hazırlıq sahəsində 5 ildən çox təcrübəsi olan müəllimlərimiz sizə yüksək bal toplamaq üçün lazımı olan təlimi keçəcəklər.</p>
+						</div>
+					</div>
+					<div class="col-md-6 course d-lg-flex ftco-animate">
+						<div class="img" style="background-image: url('{% static "blog/images/course_3.jpg" %}');"></div>
+						<div class="text bg-light p-4">
+							<h3><a href="#">Ofis Proqramları</a></h3>
+							<p>"Windows" əməliyyat sistemləri, MS Office, Word, Excel, PowerPoint. Kurs proqramını müvəffəqiyyətlə bitirən tələbələr SERTİFİKAT ilə təltif olunur.</p>
+						</div>
+					</div>
+					<div class="col-md-6 course d-lg-flex ftco-animate">
+						<div class="img" style="background-image: url('{% static "blog/images/course_4.jpg" %}');"></div>
+						<div class="text bg-light p-4">
+							<h3><a href="#">Dizayn Proqramları</a></h3>
+							<p>Rastr qrafikasının əsası və Adobe Photoshop proqramı, Vektor qrafikasına daxil olan Corel Draw və Adobe Illustrator proqramları, Adobe İndesign proqramının əsasları, Autocad və 3d Max ilə üç ölçülü modelləşmənin əsası</p>
+						</div>
+					</div>
+					<div class="col-md-6 course d-lg-flex ftco-animate">
+						<div class="img" style="background-image: url('{% static "blog/images/course_5.jpg" %}');"></div>
+						<div class="text bg-light p-4">
+							<h3><a href="#">Vergi Uçotu</a></h3>
+							<p>Bütün növ Vergi növləri və hesablanma qaydaları, ƏDV hesablanması, mahiyyəti və uçotu, Ticari əməliyyatlar zamanı yaranan ƏDV öhdəlikləri, ƏDV-nin  əvəzləşdirilməsi və s.</p>
+						</div>
+					</div>
+					<div class="col-md-6 course d-lg-flex ftco-animate">
+						<div class="img" style="background-image: url('{% static "blog/images/course_6.jpg" %}');"></div>
+						<div class="text bg-light p-4">
+							<h3><a href="#">Mühasibat Kursları</a></h3>
+							<p>Mühasibat Uçotu, Vergi uçotu, Mühasibat kargüzarlığı, 1C 8.3 dərslərini Şirkətlərdə və Dövlət qurumlarında maliyyə direktoru vəzifələrinədək çalışmış müəllim tərəfindən həyata keçirilir</p>
+						</div>
+					</div>
+					<div class="col-md-6 course d-lg-flex ftco-animate">
+						<div class="img" style="background-image: url('{% static "blog/images/course_7.jpg" %}');"></div>
+						<div class="text bg-light p-4">
+							<h3><a href="#">Magistr Hazırlığı</a></h3>
+							<p>Təcrübəli müəllim heyəti, 8-10 nəfərlik quruplar və fərdi dərslər, Həftədə 12 saatlıq tədris proqramı.</p>
+						</div>
+					</div>
+					<div class="col-md-6 course d-lg-flex ftco-animate">
+						<div class="img" style="background-image: url('{% static "blog/images/course_8.jpg" %}');"></div>
+						<div class="text bg-light p-4">
+							<h3><a href="#">Dövlət Qulluğu</a></h3>
+							<p>Dövlət qulluğuna hazırlıq 4 mərhələdə: Qanunvericilik, Məntiq, İnformatika və Azərbaycan dili keçirilir</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+    {% endblock content %}	

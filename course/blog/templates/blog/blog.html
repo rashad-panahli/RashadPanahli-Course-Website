@@ -1,0 +1,48 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+    
+  <!-- Bar -->    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{% static "blog/images/backg_2.jpg" %}');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Our Blog</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'blog-home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+    {% for post in blog_posts %}
+
+   
+   <!-- Main Body -->  
+    <section class="ftco-section d-inline-block col-md-3">
+			<div class="container">
+				<div class="row">
+            <div class="w-100 ftco-animate"> 
+              <div class="blog-entry">
+                <a href="{% url 'post-detail' post.id %}" class="block-20 d-flex align-items-end" style="background-image: url('{{ post.post_image }}');">
+            		  <div class="meta-date text-center p-2 text-warning">
+                     {{ post.post_date_posted|date:"d F, Y" }}
+                  </div>
+                </a>
+               <div class="text bg-white p-4">
+                   <h3 class="heading">{{ post.post_title }}</h3>
+                <div class="d-flex align-items-center mt-4">
+	                <p class="mb-0"><a href="{% url 'post-detail' post.id %}" class="btn btn-secondary">Ətraflı <span class="ion-ios-arrow-round-forward"></span></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+            
+
+        {% endfor %}
+
+		{% endblock %}	

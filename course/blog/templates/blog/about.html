@@ -1,0 +1,133 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+ 
+<!-- Bar -->   
+<section class="hero-wrap hero-wrap-2" style="background-image: url('{% static "blog/images/backg_2.jpg" %}');">
+    <div class="overlay"></div>
+    	<div class="container">
+        	<div class="row no-gutters slider-text align-items-center justify-content-center">
+          		<div class="col-md-9 ftco-animate text-center">
+            		<h1 class="mb-2 bread">Haqqımızda</h1>
+           			 <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'blog-home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
+         		 </div>
+        	</div>
+    	</div>
+</section>
+
+<!-- Main Body -->  
+<section class="ftco-section ftco-no-pt ftc-no-pb">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 order-md-last wrap-about py-5 wrap-about bg-light">
+				<div class="text px-4 ftco-animate">
+			  		<h2 class="mb-4">Up Academy təhsil mərkəzinə xoş gəlmisiniz!</h2>
+						<p>UP Academy Tədris Mərkəzi təhsil və tədris sahəsində ən son standartlara uyğun fəaliyyət göstərən bir hazırlıq müəssisəsidir. Tədris mərkəzimiz 2015-ci ildən etibarən fəaliyyətə başlamışdır. Əsas məqsədimiz müasir standartlara cavab verən hazırlıq mərkəzinin qurulmasıdır. </p>
+						<p>Mərkəzdə qısa vaxt ərzində müasir dövrün tələblərinə uyğun olan tədris metodlarından istifadə edilərək yüksək nəticələr əldə edilmişdir. Fəaliyyətə başladığı ilk gündən tədris mərkəzimizdə tələbələrin rahat təhsil almaları üçün bütün şərait yaradılmışdır. Dərslər geniş və rahat otaqlarda tədris olunur. Dərslər fərdi yanaşma və  interaktiv təlim metodları əsasında təşkil olunur. Biz təhsil vasitəsilə insanların məşğulluq imkanlarını artırıraq, daha yaxşı gələcək üçün onlara qapıları açırıq. Əsas vəzifəmiz tələbələrə təhsildə və karyerada hədəflərinə çatmasına kömək etməkdir.</p>
+						<p><a href="{% url 'blog-courses' %}" class="btn btn-secondary px-4 py-3">Ətraflı</a></p>
+				</div>
+			</div>
+			<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
+				<h2 class="mb-4">Bizim Təkliflər</h2>
+					<p>Dərslər qrup və ya fərdi şəkilində keçirilir. Qrupda maksimum 4-6 nəfər olur. Həftədə 3 dəfə 1 saat və ya 2 dəfə 1.5 saat olmaqla tədris olunur.</p>
+						<div class="row mt-5">
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-security"></span></div>
+										<div class="text">
+											<h3>Zəmanətli Dərslər</h3>
+											<p>Kursu bitirən tələbələr imtahan nəticələrinə əsasən SERTİFİKAT ilə təltif olunur</p>
+										</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-reading"></span></div>
+										<div class="text">
+											<h3>Müntəzəm Dərslər</h3>
+											<p>Həftədə 3 dəfə 1 saat və ya həftədə 2 dəfə 1.5 saat olmaqla keçirilir.</p>
+										</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-diploma"></span></div>
+										<div class="text">
+											<h3>Sertifikatlaşmış Müəllimlər</h3>
+											<p>XARİCİ müəllim ilə ingilis dili dərsləri</p>
+										</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-education"></span></div>
+										<div class="text">
+											<h3>Professional Metodologiya</h3>
+											<p>Dərslər fərdi yanaşma və  interaktiv təlim metodları əsasında təşkil olunur.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-jigsaw"></span></div>
+										<div class="text">
+											<h3>Kreativ öyrətmə</h3>
+											<p>Biz təhsil vasitəsilə insanların məşğulluq imkanlarını artırıraq, daha yaxşı gələcək üçün onlara qapıları açırıq. .</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-books"></span></div>
+										<div class="text">
+											<h3>Dərsliklər</h3>
+											<p>Mərkəzdə qısa vaxt ərzində müasir dövrün tələblərinə uyğun olan tədris metodlarından istifadə edilərək yüksək nəticələr əldə edilmişdir.</p>
+										</div>
+								</div>
+							</div>
+						</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Gallery -->  
+<section class="ftco-gallery">
+    <div class="container-wrap">
+    	<div class="row no-gutters">
+			<div class="col-md-3 ftco-animate">
+				<a href='{% static "blog/images/image_1.jpg" %}'' class="gallery image-popup img d-flex align-items-center" style="background-image: url('{% static "blog/images/image_1.jpg" %}');">
+					<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    					<span class="icon-instagram"></span>
+    				</div>
+				</a>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<a href='{% static "blog/images/image_2.jpg" %}' class="gallery image-popup img d-flex align-items-center" style="background-image: url('{% static "blog/images/image_2.jpg" %}');">
+					<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    					<span class="icon-instagram"></span>
+    				</div>
+				</a>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<a href='{% static "blog/images/image_3.jpg" %}' class="gallery image-popup img d-flex align-items-center" style="background-image: url('{% static "blog/images/image_3.jpg" %}');">
+					<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    					<span class="icon-instagram"></span>
+    				</div>
+				</a>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<a href='{% static "blog/images/image_4.jpg" %}' class="gallery image-popup img d-flex align-items-center" style="background-image: url('{% static "blog/images/image_4.jpg" %}');">
+					<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    					<span class="icon-instagram"></span>
+    				</div>
+				</a>
+			</div>
+        </div>
+    </div>
+</section>
+	
+	
+	{% endblock content %}
+  

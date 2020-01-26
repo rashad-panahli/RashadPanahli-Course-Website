@@ -1,0 +1,44 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+    
+   <!-- Bar -->   
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{% static "blog/images/bg_2.jpg" %}');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Our Blog</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'blog-home' %}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+    
+<!-- Main Body -->  
+    <section class="ftco-section p-3 bg-light">
+			<div class="container">
+				<div class="row">
+            <div class="col-md-6 col-lg-4 ftco-animate">
+             <div class="blog-entry">
+                <img class="img-fluid" src="{{ object.post_image.url }}">
+            		  <div class="meta-date text-center p-2 text-warning">
+                    {{ post.post_date_posted|date:"d F, Y" }}
+                    </div>
+                <div class="text bg-white p-4">
+                   <h3 class="heading">{{ object.post_title }}</h3>
+                     <p>{{ object.post_context }}</p>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+      </section>  
+            
+
+        
+
+		{% endblock %}	

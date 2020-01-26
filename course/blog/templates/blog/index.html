@@ -1,0 +1,294 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block content %}
+	  
+<!-- Carousel -->
+
+<section class="home-slider owl-carousel">
+    <div class="slider-item" style="background-image:url(static/blog/images/carousel1.jpg);">
+    	<div class="overlay"></div>
+    		<div class="container">
+    			<div class="row no-gutters slider-text align-items-left justify-content-left" data-scrollax-parent="true">
+    				<div class="col-md-8 text-center ftco-animate">
+         				 <h1 class="mb-4">Xarici dilləri  <span>Bizimlə öyrən</span></h1>
+        			</div>
+     			 </div>
+			</div>
+    </div>
+	<div class="slider-item" style="background-image:url(static/blog/images/carusel2.jpg);">
+        <div class="overlay"></div>
+    		<div class="container">
+       			<div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+    				<div class="col-md-8 text-center ftco-animate">
+        				<h1 class="mb-4">Xaricə bizimlə<span> Çıx</span></h1>
+        				<p><a href="{% url 'blog-abroad' %}" class="btn btn-secondary px-4 py-3 mt-3">Ətraflı</a></p>
+        			</div>
+    			</div>
+    		</div>
+    </div>
+  </section>
+  
+  <!--Block-->
+  <section class="ftco-services ftco-no-pb">
+	<div class="container-wrap">
+		<div class="row no-gutters">
+			<div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-primary">
+				<div class="media block-6 d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center"></div>
+						<span class="flaticon-teacher"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+						<h3 class="heading">Sertifikatlaşmış Müəllimlər</h3>
+						<p>Tədris mərkəzimizdə Professional və Müəllimlik sertifikatları ilə təltif olunmuş müəllimlərimiz dərs keçir. İngilis dili dərsləri xarici müəllim tərəfindən keçirilir. Mühasibatliq kursları 5 ildən çox təcrübəyə malik olan Şirkətlərdə və Dövlət qurumlarında maliyyə direktoru vəzifələrinədək çalışmış müəllim tərəfindən həyata keçirilir. </p>
+					</div>
+			</div>      
+			<div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-tertiary">
+				<div class="media block-6 d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						<span class="flaticon-reading"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+						<h3 class="heading">Xüsusi Təhsil</h3>
+						<p>Dərslər fərdi yanaşma və  interaktiv təlim metodları əsasında təşkil olunur. Fəaliyyətə başladığı ilk gündən tədris mərkəzimizdə tələbələrin rahat təhsil almaları üçün bütün şərait yaradılmışdır. Dərslər geniş və rahat otaqlarda tədris olunur.</p>
+					</div>
+				</div>    
+			</div>
+			<div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-fifth">
+				<div class="media block-6 d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						<span class="flaticon-books"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+						<h3 class="heading">Xaricdə Təhsil</h3>
+						<p>Dünyanın bir çox ölkələrində Bakalavr və ya Magistr təhsili almaq şansı. Bizim professional xaricdə təhsil bələdçimizin köməkliyi ilə dünyanın ən məhşur universitetlərində oxumaq şansını qaçırmayın!</p>
+					</div>
+				</div>      
+			</div>
+			<div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-quarternary">
+				<div class="media block-6 d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						<span class="flaticon-diploma"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+						<h3 class="heading">Sertifikasiya</h3>
+						<p>Kursu bitirən tələbələr imtahan nəticələrinə əsasən SERTİFİKAT ilə təltif olunur</p>
+					</div>
+				</div>      
+			</div>
+		</div>
+	</div>
+  </section>
+		
+  
+ <!--Info-->
+<section class="ftco-section ftco-no-pt ftc-no-pb">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 order-md-last wrap-about py-5 wrap-about bg-light">
+				<div class="text px-4 ftco-animate">
+	   				 <h2 class="mb-4">Up Academy təhsil mərkəzinə xoş gəlmisiniz!</h2>
+					<p>UP Academy Tədris Mərkəzi təhsil və tədris sahəsində ən son standartlara uyğun fəaliyyət göstərən bir hazırlıq müəssisəsidir. Tədris mərkəzimiz 2015-ci ildən etibarən fəaliyyətə başlamışdır. Əsas məqsədimiz müasir standartlara cavab verən hazırlıq mərkəzinin qurulmasıdır. </p>
+					<p>Mərkəzdə qısa vaxt ərzində müasir dövrün tələblərinə uyğun olan tədris metodlarından istifadə edilərək yüksək nəticələr əldə edilmişdir. Fəaliyyətə başladığı ilk gündən tədris mərkəzimizdə tələbələrin rahat təhsil almaları üçün bütün şərait yaradılmışdır. Dərslər geniş və rahat otaqlarda tədris olunur. Dərslər fərdi yanaşma və  interaktiv təlim metodları əsasında təşkil olunur. Biz təhsil vasitəsilə insanların məşğulluq imkanlarını artırıraq, daha yaxşı gələcək üçün onlara qapıları açırıq. Əsas vəzifəmiz tələbələrə təhsildə və karyerada hədəflərinə çatmasına kömək etməkdir.</p>
+					<p><a href="{% url 'blog-courses' %}" class="btn btn-secondary px-4 py-3">Ətraflı</a></p>
+				</div>
+			</div>
+			<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
+     			<h2 class="mb-4">Bizim Təkliflər</h2>
+				<p>Dərslər qrup və ya fərdi şəkilində keçirilir. Qrupda maksimum 4-6 nəfər olur. Həftədə 3 dəfə 1 saat və ya 2 dəfə 1.5 saat olmaqla tədris olunur.</p>
+				<div class="row mt-5">
+					<div class="col-lg-6">
+						<div class="services-2 d-flex">
+							<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-security"></span></div>
+								<div class="text">
+									<h3>Zəmanətli Dərslər</h3>
+									<p>Kursu bitirən tələbələr imtahan nəticələrinə əsasən SERTİFİKAT ilə təltif olunur</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="services-2 d-flex">
+							<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-reading"></span></div>
+								<div class="text">
+									<h3>Müntəzəm Dərslər</h3>
+									<p>Həftədə 3 dəfə 1 saat və ya həftədə 2 dəfə 1.5 saat olmaqla keçirilir.</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="services-2 d-flex">
+							<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-diploma"></span></div>
+								<div class="text">
+									<h3>Sertifikatlaşmış Müəllimlər</h3>
+									<p>XARİCİ müəllim ilə ingilis dili dərsləri</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="services-2 d-flex">
+							<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-education"></span></div>
+								<div class="text">
+									<h3>Professional Metodologiya</h3>
+									<p>Dərslər fərdi yanaşma və  interaktiv təlim metodları əsasında təşkil olunur.</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="services-2 d-flex">
+							<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-jigsaw"></span></div>
+								<div class="text">
+									<h3>Kreativ öyrətmə</h3>
+									<p>Biz təhsil vasitəsilə insanların məşğulluq imkanlarını artırıraq, daha yaxşı gələcək üçün onlara qapıları açırıq. .</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="services-2 d-flex">
+							<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-books"></span></div>
+								<div class="text">
+									<h3>Dərsliklər</h3>
+									<p>Mərkəzdə qısa vaxt ərzində müasir dövrün tələblərinə uyğun olan tədris metodlarından istifadə edilərək yüksək nəticələr əldə edilmişdir.</p>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--Teachers-->
+<section class="ftco-section ftco-no-pb">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-3 ftco-animate">
+				<div class="staff">
+					<div class="img-wrap d-flex align-items-stretch">
+						<div class="img align-self-stretch" style="background-image: url('{% static "blog/images/teach-1.jpg" %}');"></div>
+					</div>
+					<div class="text pt-3 text-center">
+						<h3>Nuriyeva Mehriban</h3>
+						<span class="position mb-2">Ingilis dili müəllimi</span>
+						<div class="faded">
+							<p>7 IELTSi var, Dillər Universtetini bitirib. 2 illik iş təcrübəsi var</p>
+							<ul class="ftco-social text-center">
+								<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+							</ul>
+	       				</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 ftco-animate">
+				<div class="staff">
+					<div class="img-wrap d-flex align-items-stretch">
+						<div class="img align-self-stretch" style="background-image: url('{% static "blog/images/teach-2.jpg" %}');"></div>
+					</div>
+					<div class="text pt-3 text-center">
+						<h3>Cəfərova Ayşən</h3>
+						<span class="position mb-2">Ingilis dili müəllimi</span>
+						<div class="faded">
+							<p>İsveşrənin UBİS universitetində təhsil alib. 7 ildir tədrisle məşğuldur.</p>
+							<ul class="ftco-social text-center">
+								<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 ftco-animate">
+				<div class="staff">
+					<div class="img-wrap d-flex align-items-stretch">
+						<div class="img align-self-stretch" style="background-image: url('{% static "blog/images/teach-3.jpg" %}');"></div>
+					</div>
+					<div class="text pt-3 text-center">
+						<h3>Agba Chibuike</h3>
+						<span class="position mb-2">Xarici dil müəllimi</span>
+						<div class="faded">
+							<p>2008-ci ildən tədris edir. TEFL sertifikatı var.</p>
+							<ul class="ftco-social text-center">
+								<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 ftco-animate">
+				<div class="staff">
+					<div class="img-wrap d-flex align-items-stretch">
+						<div class="img align-self-stretch" style="background-image: url('{% static "blog/images/teach-4.jpg" %}');"></div>
+					</div>
+					<div class="text pt-3 text-center">
+						<h3>Omrova Əsmər</h3>
+						<span class="position mb-2">Xarici dil müəllimi</span>
+						<div class="faded">
+							<p>2 il iş təcrübəsi ilə yanaşı, kreativ metodları var</p>
+							<ul class="ftco-social text-center">
+								<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+								<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--Courses-->
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-2">
+        	<div class="col-md-8 text-center heading-section ftco-animate">
+            	<h2 class="mb-4"><span>Bizim</span> Kurslar</h2>
+            	<p>Professional müəllimlərimizin həyata keçirdikləri dərslərə 100% zəmanət veririk!</p>
+          </div>
+        </div>	
+		<div class="row">
+			<div class="col-md-6 course d-lg-flex ftco-animate">
+				<div class="img" style="background-image: url(static/blog/images/course_1.jpg);"></div>
+					<div class="text bg-light p-4">
+						<h3><a href="#">Xarici Dil Kursları</a></h3>				
+						<p>Ingilis, Rus, Alman Italyan, Ispan, Fransız, Çex, Çin və Ərəb dillərinə xarici müəllimlərimizlə öyrənə bilərsiz</p>
+					</div>
+			</div>
+			<div class="col-md-6 course d-lg-flex ftco-animate">
+				<div class="img" style="background-image: url(static/blog/images/course_6.jpg);"></div>
+					<div class="text bg-light p-4">
+						<h3><a href="#">Mühasibat Kursları</a></h3>
+						<p>Mühasibat Uçotu, Vergi uçotu, Mühasibat kargüzarlığı, 1C 8.3 dərslərini Şirkətlərdə və Dövlət qurumlarında maliyyə direktoru vəzifələrinədək çalışmış müəllim tərəfindən həyata keçirilir</p>
+					</div>
+			</div>
+			<div class="col-md-6 course d-lg-flex ftco-animate">
+				<div class="img" style="background-image: url(static/blog/images/course_8.jpg);"></div>
+					<div class="text bg-light p-4">
+						<h3><a href="#">Dövlət Qulluğu</a></h3>
+						<p>Dövlət qulluğuna hazırlıq 4 mərhələdə: Qanunvericilik, Məntiq, İnformatika və Azərbaycan dili keçirilir</p>
+					</div>
+			</div>
+			<div class="col-md-6 course d-lg-flex ftco-animate">
+				<div class="img" style="background-image: url(static/blog/images/course_7.jpg);"></div>
+					<div class="text bg-light p-4">
+						<h3><a href="#">Magistr Hazırlığı</a></h3>
+						<p>Təcrübəli müəllim heyəti, 8-10 nəfərlik quruplar  və fərdi dərslər, Həftədə 12 saatlıq tədris proqramı.</p>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+   
+  {% endblock content %}
